@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gmail_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundImage"
+        android:src="@drawable/main_background_image"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#A0000000"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/image_user_width"
+                android:layout_height="@dimen/image_user_height"
+                android:id="@+id/imageUser"
+                android:layout_margin="@dimen/image_list_item_margin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameUser"
+                android:text="User Name"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/text_padding"
+                android:textSize="@dimen/text_size"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imageUser"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailUser"
+                android:text="User Email"
+                android:padding="@dimen/text_padding"
+                android:textSize="@dimen/text_size"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/imageUser"
+                android:layout_below="@id/nameUser"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/logoutButton"
+                android:padding="@dimen/text_padding"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logout"/>
+
+
+        </RelativeLayout> -->
+
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bodyMusicMainActivity"
+            android:background="#A0000000"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/music_player"
+        android:id="@+id/musicPlayer"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

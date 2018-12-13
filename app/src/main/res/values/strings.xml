@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Music Garden</string>
+
+    <string name="shared_prefs">music_garden_shared_prefs</string>
+
+    <string name="api_music_get_artists">music/getArtistList</string>
+    <string name="api_music_get_albums">music/getAlbumList</string>
+    <string name="api_music_get_songs">music/getSongList</string>
+    <string name="api_music_get_user_songs">music/getUserSongList</string>
+    <string name="api_music_get_artist">music/getArtist</string>
+    <string name="api_music_get_album">music/getAlbum</string>
+    <string name="api_music_get_song">music/getSong</string>
+    <string name="api_music_get_home">music/getHome</string>
+
+    <string name="api_user_get_profile">user/me</string>
+    <string name="api_user_add_song">user/addSong</string>
+    <string name="api_google_sign_in">user/signIn</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_stream">StreamActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>

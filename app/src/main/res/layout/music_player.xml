@@ -1,0 +1,75 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_peekHeight="@dimen/music_player_height_collapse"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/musicPlayerMusicMainActivity"
+            android:padding="@dimen/activity_horizontal_margin"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:layout_width="@dimen/image_music_player_width"
+                android:layout_height="@dimen/image_music_player_height"
+                android:id="@+id/musicPlayerImage"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/musicPlayerSongName"
+                    android:text="Seven Seas of Rhye"
+                    android:textColor="#FFFFFF"
+                    android:padding="@dimen/text_padding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/musicPlayerArtistName"
+                    android:text="Queen"
+                    android:textColor="#FFFFFF"
+                    android:padding="@dimen/text_padding"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/music_player_play_pause_width"
+                android:layout_height="@dimen/music_player_play_pause_width"
+                android:id="@+id/musicPlayerMiniPause"
+                android:src="@drawable/music_player_pause"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/music_player_play_pause_width"
+                android:layout_height="@dimen/music_player_play_pause_width"
+                android:id="@+id/musicPlayerMiniPlay"
+                android:src="@drawable/music_player_play"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

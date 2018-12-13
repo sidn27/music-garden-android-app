@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0091EA</color>
+
+    <array name="array_dot_active">
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+    </array>
+</resources>

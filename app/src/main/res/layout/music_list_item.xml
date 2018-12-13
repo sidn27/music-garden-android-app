@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/image_list_item_width"
+        android:layout_height="@dimen/image_list_item_height"
+        android:id="@+id/imageList"
+        android:layout_margin="@dimen/image_list_item_margin"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameList"
+        android:text="Artist Name"
+        android:padding="@dimen/text_padding"
+        android:textSize="@dimen/text_size"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
